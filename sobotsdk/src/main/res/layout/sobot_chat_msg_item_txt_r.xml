@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/sobot_real_ll_content"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginRight="@dimen/sobot_DIMEN_48PX"
+              android:orientation="vertical">
+    <TextView
+        android:id="@+id/sobot_reminde_time_Text"
+        android:layout_marginTop="10dp"
+        style="@style/sobot_center_remind_time"/>
+
+    <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="@dimen/sobot_list_divider_height"
+                    android:layout_marginLeft="@dimen/sobot_DIMEN_168PX"
+                    android:layout_marginRight="@dimen/sobot_DIMEN_116PX">
+
+        <!-- 我的名称 -->
+        <TextView
+            android:id="@+id/sobot_name"
+            style="@style/sobot_chatting_nickname"
+            android:layout_toLeftOf="@+id/sobot_imgHead"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/sobot_imgHead"
+            style="@style/sobot_chatting_imghead"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/sobot_chatting_default_head"/>
+
+        <!-- 我的消息的内容 -->
+        <LinearLayout
+            android:id="@+id/sobot_my_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_below="@+id/sobot_name"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/sobot_imgHead">
+
+            <FrameLayout
+                android:id="@+id/sobot_frame_layout"
+                android:layout_width="@dimen/sobot_DIMEN_48PX"
+                android:layout_height="@dimen/sobot_DIMEN_48PX"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/sobot_msgStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sobot_re_send_selector"
+                    android:contentDescription="@null"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <!-- 消息的状态 -->
+
+                <ProgressBar
+                    android:id="@+id/sobot_msgProgressBar"
+                    style="?android:attr/progressBarStyleSmallTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/sobot_ll_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sobot_chatto_bg_normal"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/sobot_DIMEN_12PX"
+                android:paddingTop="@dimen/sobot_DIMEN_12PX" >
+
+                <TextView
+                    android:id="@+id/sobot_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/sobot_DIMEN_10PX"
+                    android:layout_marginLeft="@dimen/sobot_DIMEN_20PX"
+                    android:layout_marginRight="@dimen/sobot_DIMEN_20PX"
+                    android:layout_marginTop="2dp"
+                    android:lineSpacingExtra="1dp"
+                    android:textColor="@color/sobot_msg_text_color"
+                    android:textSize="@dimen/sobot_msg_text_size"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

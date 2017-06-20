@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 布局文件 sobot_upload_layout.xml 中 id 为 @+id/sobot_btn_picture 和 @+id/sobot_btn_take_picture 的selector -->
+    <item android:state_pressed="false"><shape>
+            <gradient android:angle="90" android:endColor="@color/sobot_color_bottom_bg" android:startColor="@color/sobot_color_bottom_bg" />
+            <!-- stroke 描边 -->
+            <stroke android:width="1dip" android:color="#D3D3D3" />
+            <!-- corners 圆角 android:radius为角的弧度，值越大角越圆。 -->
+            <corners android:radius="30dip" />
+
+            <padding android:bottom="5dp" android:left="15dp" android:top="5dp" />
+        </shape></item>
+    <item android:state_pressed="true"><shape>
+            <gradient android:angle="90" android:endColor="#d9dadc" android:startColor="#d9dadc" />
+            <!-- stroke 描边 -->
+            <stroke android:width="1dip" android:color="#D3D3D3" />
+            <!-- corners 圆角 android:radius为角的弧度，值越大角越圆。 -->
+            <corners android:radius="30dip" />
+
+            <padding android:bottom="5dp" android:left="15dp" android:top="5dp" />
+        </shape></item>
+</selector>

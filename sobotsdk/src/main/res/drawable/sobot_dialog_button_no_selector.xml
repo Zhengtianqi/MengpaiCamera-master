@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item android:drawable="@drawable/sobot_button_style_pressed" android:state_pressed="true"/>-->
+    <!--<item android:drawable="@drawable/sobot_button_style"/>-->
+
+    <item android:drawable="@drawable/sobot_dialog_button_no_normal" android:state_pressed="true"/>
+    <item android:drawable="@drawable/sobot_dialog_button_no_normal" android:state_checked="true"/>
+    <item android:drawable="@drawable/sobot_dialog_button_no_pressed"/>
+</selector>

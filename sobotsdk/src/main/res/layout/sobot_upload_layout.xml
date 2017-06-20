@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/sobot_color_bottom_bg">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:id="@+id/sobot_custom_bottom"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="8dp"
+                  android:layout_marginRight="8dp"
+                  android:visibility="gone"
+                  android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sobot_btn_picture"
+            style="@style/sobot_chatting_panel_upload"
+            android:drawableTop="@drawable/sobot_tack_picture_button_selector"
+            android:text="@string/sobot_upload"/>
+
+        <TextView
+            android:id="@+id/sobot_btn_take_picture"
+            style="@style/sobot_chatting_panel_upload"
+            android:drawableTop="@drawable/sobot_camera_picture_button_selector"
+            android:text="@string/sobot_attach_take_pic"/>
+
+        <TextView
+            android:id="@+id/sobot_btn_satisfaction"
+            style="@style/sobot_chatting_panel_upload"
+            android:drawableTop="@drawable/sobot_picture_satisfaction_selector"
+            android:text="@string/sobot_str_bottom_satisfaction"/>
+
+        <TextView
+            android:visibility="invisible"
+            style="@style/sobot_chatting_panel_upload"
+            android:drawableTop="@drawable/sobot_picture_satisfaction_selector"
+            android:text="@string/sobot_str_bottom_satisfaction"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:id="@+id/sobot_robot_bottom"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="8dp"
+                  android:layout_marginRight="8dp"
+                  android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sobot_robot_btn_satisfaction"
+            style="@style/sobot_chatting_panel_upload"
+            android:drawableTop="@drawable/sobot_picture_satisfaction_selector"
+            android:text="@string/sobot_str_bottom_satisfaction"/>
+
+        <TextView
+            android:id="@+id/sobot_robot_btn_leavemsg"
+            style="@style/sobot_chatting_panel_upload"
+            android:drawableTop="@drawable/sobot_leavemsg_selector"
+            android:text="@string/sobot_str_bottom_message"/>
+
+        <TextView
+            android:visibility="invisible"
+            style="@style/sobot_chatting_panel_upload"
+            android:drawableTop="@drawable/sobot_picture_satisfaction_selector"
+            android:text="@string/sobot_str_bottom_satisfaction"/>
+
+        <TextView
+            android:visibility="invisible"
+            style="@style/sobot_chatting_panel_upload"
+            android:drawableTop="@drawable/sobot_picture_satisfaction_selector"
+            android:text="@string/sobot_str_bottom_satisfaction"/>
+    </LinearLayout>
+
+</RelativeLayout>

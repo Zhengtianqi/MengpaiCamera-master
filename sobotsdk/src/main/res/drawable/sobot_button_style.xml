@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <gradient
+        android:angle="90"/>
+    <!-- stroke 描边 -->
+    <stroke
+        android:width="0.5dip"
+        android:color="#C3C3C3" />
+    <!-- corners 圆角 android:radius为角的弧度，值越大角越圆。 -->
+    <corners android:radius="5dip" />
+
+</shape>

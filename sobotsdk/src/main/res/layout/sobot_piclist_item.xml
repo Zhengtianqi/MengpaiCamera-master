@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/sobot_iv_pic"
+        android:layout_width="@dimen/sobot_pic_img_width"
+        android:layout_height="@dimen/sobot_pic_img_width"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/sobot_default_pic"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        />
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/sobot_iv_pic_add"
+        android:layout_width="@dimen/sobot_pic_img_width"
+        android:layout_height="@dimen/sobot_pic_img_width"
+        android:background="@drawable/sobot_pic_list_add"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        />
+</RelativeLayout>

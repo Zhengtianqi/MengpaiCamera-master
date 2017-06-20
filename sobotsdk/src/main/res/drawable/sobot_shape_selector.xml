@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 布局文件为 sobot_chat_activity.xml 中 id为@+id/sobot_btn_send 发送按钮的颜色选择器 -->
+    <item android:state_pressed="true"><shape>
+            <gradient android:angle="90" android:endColor="#0cb273" android:startColor="#0cb273" />
+            <!-- stroke 描边 -->
+            <stroke android:width="2dip" android:color="#0cb273" />
+            <!-- corners 圆角 android:radius为角的弧度，值越大角越圆。 -->
+            <corners android:radius="5dip" />
+        </shape></item>
+    <item android:state_pressed="false"><shape>
+            <gradient android:angle="90" android:endColor="@color/sobot_btn_send_selector_color" android:startColor="@color/sobot_btn_send_selector_color" />
+
+            <stroke android:width="2dip" android:color="@color/sobot_btn_send_selector_color" />
+
+            <corners android:radius="5dip" />
+        </shape></item>
+
+</selector>

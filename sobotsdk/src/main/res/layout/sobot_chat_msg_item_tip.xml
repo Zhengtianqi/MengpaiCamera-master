@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/sobot_real_ll_content"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginBottom="@dimen/sobot_list_divider_height"
+              android:layout_marginRight="@dimen/sobot_DIMEN_48PX"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/sobot_reminde_time_Text"
+        android:layout_marginTop="10dp"
+        style="@style/sobot_center_remind_time"/>
+
+    <TextView
+        android:id="@+id/sobot_center_Remind_note"
+        style="@style/sobot_center_remind_note"/>
+
+    <TextView
+        android:id="@+id/sobot_center_Remind_note1"
+        style="@style/sobot_center_remind_note"
+        android:layout_marginBottom="@dimen/sobot_list_divider_height"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:textColor="@color/sobot_color_remind_bg"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_not_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/sobot_list_divider_height"
+        android:layout_marginTop="0dp"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="50dp"
+            android:layout_height="0.1dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+            android:background="#cdcdcd"/>
+
+        <TextView
+            android:id="@+id/sobot_center_Remind_note5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sobot_DIMEN_36PX"
+            android:layout_toRightOf="@+id/view1"
+            android:text="@string/sobot_no_read"
+            android:textColor="#afb2b2"
+            android:textSize="@dimen/sobot_listview_remind_text_size"/>
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/sobot_center_Remind_note5"
+            android:background="#cdcdcd"/>
+    </RelativeLayout>
+
+</LinearLayout>

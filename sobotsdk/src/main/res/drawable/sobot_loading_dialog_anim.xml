@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/sobot_dialog_load_1"
+        android:duration="150"/>
+
+    <item
+        android:drawable="@drawable/sobot_dialog_load_2"
+        android:duration="150"/>
+
+    <item
+        android:drawable="@drawable/sobot_dialog_load_3"
+        android:duration="150"/>
+
+    <item
+        android:drawable="@drawable/sobot_dialog_load_4"
+        android:duration="150"/>
+
+    <item
+        android:drawable="@drawable/sobot_dialog_load_5"
+        android:duration="150"/>
+
+    <item
+        android:drawable="@drawable/sobot_dialog_load_6"
+        android:duration="150"/>
+
+    <item
+        android:drawable="@drawable/sobot_dialog_load_7"
+        android:duration="150"/>
+
+    <item
+        android:drawable="@drawable/sobot_dialog_load_8"
+        android:duration="150"/>
+
+    <item
+        android:drawable="@drawable/sobot_dialog_load_9"
+        android:duration="150"/>
+
+    <item
+        android:drawable="@drawable/sobot_dialog_load_10"
+        android:duration="150"/>
+
+    <item
+        android:drawable="@drawable/sobot_dialog_load_11"
+        android:duration="150"/>
+
+    <item
+        android:drawable="@drawable/sobot_dialog_load_12"
+        android:duration="150"/>
+
+</animation-list>

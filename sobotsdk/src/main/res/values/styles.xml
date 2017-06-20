@@ -1,0 +1,152 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+    -->
+    <style name="sobot_AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="sobot_AppTheme" parent="sobot_AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="sobot_roomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/sobot_rating_yellow</item>
+        <item name="android:numStars">5</item>
+    </style>
+
+    <style name="sobot_Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="sobot_dialog_skill" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/sobot_popupwindow_in</item>
+        <item name="android:windowExitAnimation">@anim/sobot_popupwindow_out</item>
+    </style>
+
+    <style name="sobot_dialog_dcrc" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="sobot_chatting_keyboard_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:contentDescription">@null</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="sobot_center_remind_note">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/sobot_toast_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/sobot_listview_remind_text_color</item>
+        <item name="android:textSize">@dimen/sobot_listview_remind_text_size</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+
+    <style name="sobot_center_remind_time" parent="sobot_center_remind_note">
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+
+    <style name="sobot_chatting_panel_upload" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_marginLeft">27dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/sobot_color_bottom_upload_btn_color</item>
+        <item name="android:textSize">@dimen/sobot_text_font_small</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="sobot_chatting_nickname" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textColor">#AAAAAA</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:maxEms">13</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="sobot_chatting_imghead" >
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:contentDescription">@null</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="sobot_clearHistoryDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="sobot_progress_circle">
+        <item name="android:indeterminateDrawable">@drawable/sobot_progressbar_circle_loading</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="sobot_dialog_Progress" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@drawable/sobot_round_angle_toast</item>
+
+        <!-- 自己想要的背景 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>

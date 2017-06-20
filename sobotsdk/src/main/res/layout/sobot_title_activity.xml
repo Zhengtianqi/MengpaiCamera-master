@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sobot.chat.widget.kpswitch.widget.KPSwitchRootLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Title -->
+
+    <include layout="@layout/sobot_layout_titlebar" />
+
+    <RelativeLayout
+        android:id="@+id/sobot_net_status_remide"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sobot_DIMEN_108PX"
+        android:background="#e4e4e4"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/sobot_net_not_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/sobot_robot_msg_text_size"
+            android:text="@string/sobot_network_unavailable"
+            android:textColor="#666666" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@id/sobot_net_not_connect"
+            android:contentDescription="@null"
+            android:src="@drawable/sobot_icon_tag_nonet" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/sobot_layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff" >
+    </FrameLayout>
+
+</com.sobot.chat.widget.kpswitch.widget.KPSwitchRootLinearLayout>

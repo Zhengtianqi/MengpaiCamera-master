@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/sobot_sv_root"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+    <RelativeLayout android:id="@+id/sobot_post_msg_layout"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/sobot_lv_message_bg">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/top_rel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/sobot_iv_post_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/sobot_icon_letter"
+                android:contentDescription="@null">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/sobot_tv_post_msg1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sobot_iv_post_msg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/sobot_color_bottom_btn_voice"
+                android:textSize="@dimen/sobot_text_font_small_16sp"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                          android:orientation="vertical"
+                    android:background="@drawable/sobot_button_style1"
+                          android:layout_below="@+id/sobot_tv_post_msg1">
+                <EditText
+                    android:id="@+id/sobot_et_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/sobot_edittext_noborder_shape"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:lineSpacingExtra="5dp"
+                    android:padding="10dp"
+                    android:textColor="@android:color/background_dark"
+                    android:textColorHint="@color/sobot_color_post_msg_text_color"
+                    android:textSize="15sp"/>
+
+                <LinearLayout
+                    android:id="@+id/sobot_enclosure_container"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                              android:orientation="vertical"
+                              android:layout_marginLeft="10dp"
+                              android:layout_marginRight="10dp"
+                              android:layout_marginBottom="10dp"
+                              android:layout_height="wrap_content">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/sobot_line_1dp"
+                        android:visibility="visible"/>
+                    <GridView
+                        android:id="@+id/sobot_post_msg_pic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:overScrollMode="never"
+                        android:background="@android:color/transparent"
+                        android:cacheColorHint="@android:color/transparent"
+                        android:fadingEdge="none"
+                        android:horizontalSpacing="2dp"
+                        android:verticalSpacing="2dp"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="5">
+                    </GridView >
+
+                    <TextView
+                        android:id="@+id/sobot_enclosure_hint"
+                        android:layout_width="match_parent"
+                              android:layout_marginTop="10dp"
+                              android:textSize="12sp"
+                              android:textColor="#aaaaaa"
+                              android:text="@string/sobot_post_msg_hint_enclosure"
+                              android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_rel"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/sobot_layout_border"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/sobot_et_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:hint="@string/sobot_post_msg_hint_email"
+                    android:inputType="textEmailSubject"
+                    android:padding="10dp"
+                    android:textColor="@android:color/background_dark"
+                    android:textColorHint="@color/sobot_color_post_msg_text_color"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/sobot_img_clear_email"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:padding="10dp"
+                    android:src="@drawable/sobot_word_delete_selector"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/sobot_frist_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/sobot_line_1dp"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/sobot_img_clear_phone"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:padding="10dp"
+                    android:src="@drawable/sobot_word_delete_selector"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/sobot_leavemsg_phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/sobot_img_clear_phone"
+                    android:background="#ffffff"
+                    android:inputType="textEmailSubject"
+                    android:padding="10dp"
+                    android:textColor="@android:color/background_dark"
+                    android:textColorHint="@color/sobot_color_post_msg_text_color"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/sobot_second_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/sobot_line_1dp"
+                android:visibility="gone"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/sobot_img_clear_nikename"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:padding="10dp"
+                    android:src="@drawable/sobot_word_delete_selector"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/sobot_leavemsg_nikename"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/sobot_img_clear_nikename"
+                    android:background="#ffffff"
+                    android:inputType="textEmailSubject"
+                    android:padding="10dp"
+                    android:textColor="@android:color/background_dark"
+                    android:textColorHint="@color/sobot_color_post_msg_text_color"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

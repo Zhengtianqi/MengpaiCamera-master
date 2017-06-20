@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <com.stickercamera.app.view.TopView
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--<GridView-->
+        <!--android:id="@+id/pic_gridView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="3"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:numColumns="4"-->
+        <!--android:horizontalSpacing="5dp"-->
+        <!--android:verticalSpacing="5dp"-->
+        <!--android:stretchMode="columnWidth"-->
+        <!--android:cacheColorHint="#00000000"-->
+        <!--android:scrollbars="none"-->
+        <!--android:background="#f0f0f0">-->
+    <!--</GridView>-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/pic_all_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_gravity="center"
+        android:background="#f0f0f0"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#f0f0f0"/>
+
+        <TextView
+            android:id="@+id/pic_choose_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/start_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/blue"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="开始拼图"
+            android:textSize="14dp"
+            android:textColor="#ffffff"/>
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/start_tv"
+            android:layout_marginTop="10dp"
+            android:background="#f0f0f0"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/pic_select_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/line"
+            android:layout_centerVertical="true"
+            android:background="#f0f0f0"/>
+    </RelativeLayout>
+
+</LinearLayout>

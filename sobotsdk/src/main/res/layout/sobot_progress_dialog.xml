@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="165dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/loadingImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sobot_loading_dialog_anim"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/id_tv_loadingmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loadingImageView"
+            android:text="@string/sobot_loading"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</LinearLayout>

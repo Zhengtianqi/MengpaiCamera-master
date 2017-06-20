@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- 发送的消息失败时，重新发送按钮 -->
+    <item android:drawable="@drawable/sobot_failed_pressed" android:state_pressed="true"/>
+    <item android:drawable="@drawable/sobot_failed_normal"/>
+
+</selector>

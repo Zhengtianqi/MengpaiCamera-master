@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddd" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ddd" >
+
+        <com.sobot.chat.widget.gif.GifView
+            android:id="@+id/sobot_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <!-- 显示加载文字的动画 -->
+
+        <TextView
+            android:id="@+id/sobot_txt_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sobot_image_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dip"
+            android:text="@string/sobot_welcome"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sobot_textReConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sobot_image_view"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dip"
+            android:text="@string/sobot_current_network"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/sobot_icon_nonet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/sobot_textReConnect"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dip"
+            android:contentDescription="@null"
+            android:src="@drawable/sobot_icon_nonet"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/sobot_btn_reconnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sobot_textReConnect"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/sobot_button_style"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/sobot_reunicon"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</FrameLayout>

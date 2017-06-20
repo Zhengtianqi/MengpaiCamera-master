@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d0d0d0">
+
+    <com.stickercamera.app.view.TopView
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/puzzle_ll"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <com.stickercamera.app.view.PuzzleView
+            android:id="@+id/puzzle_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/template_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="选择模板"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/sobot_webview_toolsbar_reload_normal"/>
+    <item android:drawable="@drawable/sobot_webview_toolsbar_reload_pressed" android:state_pressed="true"/>
+</selector>

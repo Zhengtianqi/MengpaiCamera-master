@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/sobot_ll_skill"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/sobot_item_skill_selector"
+              android:orientation="vertical"
+              android:paddingBottom="0.1dp"
+              android:paddingRight="0.1dp"
+              android:visibility="invisible">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="55dp"
+                  android:gravity="center" android:orientation="vertical">
+        <TextView
+            android:id="@+id/sobot_tv_skill_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:paddingBottom="0dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="3dp"
+            android:text="其他"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sobot_text_font_small_16sp"/>
+
+        <TextView
+            android:id="@+id/sobot_tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sobot_tv_skill_name"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="留言"
+            android:textColor="@color/sobot_color_item_skill_offline_status"
+            android:textSize="10sp"/>
+    </LinearLayout>
+
+</LinearLayout>

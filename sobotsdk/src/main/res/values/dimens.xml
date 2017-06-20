@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="sobot_activity_horizontal_margin">16dp</dimen>
+    <dimen name="sobot_activity_vertical_margin">16dp</dimen>
+
+    <!-- XListView -->
+    <dimen name="sobot_list_divider_height">10dp</dimen>
+    <dimen name="sobot_xlistview_layout_width_60">60dp</dimen>
+    <dimen name="sobot_xlistview_layout_width_3">3dp</dimen>
+    <dimen name="sobot_xlistview_layout_width_30">30dp</dimen>
+    <dimen name="sobot_xlistview_layout_width_10">10dp</dimen>
+    <dimen name="sobot_xlistview_layout_width_35">-35dp</dimen>
+    <dimen name="sobot_xlistview_layout_width_40">-40dp</dimen>
+    <dimen name="sobot_xlistview_ts_layout_width_12">12sp</dimen>
+    <dimen name="sobot_bbuton_rounded_corner_radius">5dp</dimen>
+    <dimen name="sobot_text_font_small">14sp</dimen>
+    <dimen name="sobot_text_font_small_16sp">16sp</dimen>
+    <dimen name="sobot_text_font_normal">18sp</dimen>
+    <dimen name="sobot_text_font_large">20sp</dimen>
+    <dimen name="sobot_listview_remind_text_size">12sp</dimen>
+    <dimen name="sobot_robot_msg_text_size">16sp</dimen>
+    <dimen name="sobot_msg_text_size">16sp</dimen>
+    <dimen name="sobot_msg_voice_text_size">16sp</dimen>
+    <dimen name="sobot_min_panel_height">220dp</dimen>
+    <dimen name="sobot_max_panel_height">380dp</dimen>
+
+    <dimen name="sobot_item_emoticon_size_default">32dp</dimen>
+</resources>

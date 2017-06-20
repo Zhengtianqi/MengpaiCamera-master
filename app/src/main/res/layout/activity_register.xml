@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xiangjibg"
+    android:weightSum="1"
+    android:fitsSystemWindows="true">
+    <com.customview.CommonTitleBar
+        android:id="@+id/title_layout"
+        style="@style/head_default"
+        app:titleTxt="注册" />
+    <TextView
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/z_text1"
+        android:textAlignment="center"
+        android:textSize="25dp"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/z_text2"
+        android:textAlignment="center"
+        android:textSize="25dp"/>
+
+    <LinearLayout
+        android:layout_width="292dp"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/text_round"
+        android:layout_weight="0.03">
+
+        <EditText
+            android:id="@+id/r_username"
+            android:layout_width="217dp"
+            android:layout_height="42dp"
+             android:hint="@string/z_phone_num"
+            android:textSize="18dp"
+            >
+        </EditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/z_phone_yanzheng"
+            android:background="@color/white"
+            android:textSize="17sp"
+            android:id="@+id/yanzheng" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/r_userpassword"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_round"
+        android:hint="@string/z_phone_input"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_weight="0.03">
+    </EditText>
+    <Button
+        android:id="@+id/register"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round"
+        android:text="@string/z_go"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+         />
+
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+<!-- 评价机器人时 是否有以下问题。那些问题的selector -->
+    <gradient
+        android:angle="90"
+        android:endColor="@color/sobot_color"
+        android:startColor="@color/sobot_color" />
+    <!-- corners 圆角 android:radius为角的弧度，值越大角越圆。 -->
+    <corners android:radius="30dip" />
+
+</shape>

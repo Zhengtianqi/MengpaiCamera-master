@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="@dimen/sobot_DIMEN_12PX"
+              android:layout_marginLeft="@dimen/sobot_DIMEN_48PX"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/sobot_list_divider_height"
+              android:paddingTop="0dp">
+
+    <!-- 中间提醒内容 -->
+    <TextView
+        android:id="@+id/sobot_reminde_time_Text"
+        style="@style/sobot_center_remind_time"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--头像-->
+        <ImageView
+            android:id="@+id/sobot_imgHead"
+            style="@style/sobot_chatting_imghead"
+            android:layout_marginLeft="10dp"/>
+
+        <!-- 昵称 -->
+        <TextView
+            android:id="@+id/sobot_name"
+            style="@style/sobot_chatting_nickname"
+            android:layout_toRightOf="@+id/sobot_imgHead"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sobot_name"
+            android:layout_toRightOf="@+id/sobot_imgHead">
+
+            <!-- 机械人的消息内容 -->
+            <LinearLayout
+                android:id="@+id/sobot_ll_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/sobot_chatfrom_bg_normal"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="2dp">
+
+                <!--标题-->
+                <TextView
+                    android:id="@+id/sobot_msg_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/sobot_DIMEN_7PX"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="@dimen/sobot_DIMEN_7PX"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="@dimen/sobot_DIMEN_5PX"
+                    android:maxLines="1"
+                    android:paddingTop="2dp"
+                    android:textColor="@color/sobot_robot_msg_text_color"
+                    android:textSize="@dimen/sobot_text_font_normal"
+                    android:textStyle="bold"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/sobot_bigPicImage"
+                    android:layout_width="@dimen/sobot_DIMEN_481PX"
+                    android:layout_height="@dimen/sobot_DIMEN_480PX"
+                    android:contentDescription="@null"
+                    android:maxHeight="@dimen/sobot_DIMEN_240PX"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"/>
+
+                <!-- 机械人回复  单文本消息 -->
+                <TextView
+                    android:id="@+id/sobot_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/sobot_DIMEN_20PX"
+                    android:layout_marginTop="@dimen/sobot_DIMEN_20PX"
+                    android:lineSpacingExtra="1dp"
+                    android:textSize="12sp"
+                    android:visibility="gone"/>
+
+                <!-- 图片 start -->
+                <RelativeLayout
+                    android:id="@+id/sobot_rl_real_pic"
+                    android:layout_width="@dimen/sobot_DIMEN_289PX"
+                    android:layout_height="@dimen/sobot_DIMEN_276PX">
+
+                    <!--客服发送的单张图片显示控件-->
+                    <ImageView
+                        android:id="@+id/sobot_simple_picture"
+                        android:layout_width="@dimen/sobot_DIMEN_289PX"
+                        android:layout_height="@dimen/sobot_DIMEN_276PX"
+                        android:contentDescription="@null"
+                        android:gravity="center"
+                        android:maxWidth="@dimen/sobot_DIMEN_480PX"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/sobot_pic_isgif"
+                        android:layout_width="20dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/sobot_color"
+                        android:gravity="center"
+                        android:text="gif"
+                        android:textSize="10sp"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/sobot_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/sobot_DIMEN_7PX"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="@dimen/sobot_DIMEN_7PX"
+                    android:lineSpacingExtra="@dimen/sobot_DIMEN_5PX"
+                    android:paddingTop="2dp"
+                    android:textColor="@color/sobot_robot_msg_text_color"
+                    android:textSize="@dimen/sobot_robot_msg_text_size"
+                    android:visibility="gone"/>
+
+                <!-- stripe -->
+                <TextView
+                    android:id="@+id/sobot_stripe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/sobot_DIMEN_20PX"
+                    android:gravity="left"
+                    android:textColor="@color/sobot_robot_msg_text_color"
+                    android:textSize="@dimen/sobot_robot_msg_text_size"
+                    android:visibility="gone"/>
+
+                <!-- 机器人回复中有1、2、3这样的多选答案 -->
+                <LinearLayout
+                    android:id="@+id/sobot_answersList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/sobot_DIMEN_20PX"
+                    android:layout_marginLeft="@dimen/sobot_DIMEN_36PX"
+                    android:layout_marginRight="@dimen/sobot_DIMEN_36PX"
+                    android:layout_marginTop="3dip"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                </LinearLayout>
+
+                <!-- 阅读全文上面的一条横线 -->
+                <View
+                    android:id="@+id/read_alltext_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#dadada"
+                    android:visibility="gone"/>
+
+                <!-- 阅读全文 -->
+                <TextView
+                    android:id="@+id/sobot_rendAllText"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/sobot_read_all"
+                    android:textColor="@color/sobot_color_read_all"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sobot_ll_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/sobot_tv_transferBtn"
+                    android:layout_width="70dp"
+                    android:gravity="center"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="13sp"
+                    android:textColor="@drawable/sobot_edit_textcolor_selector"
+                    android:background="@drawable/sobot_edit_selector"
+                    android:text="转人工"/>
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_alignParentRight="true"
+                              android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/sobot_tv_likeBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/sobot_din_selector"
+                        android:layout_marginRight="5dp"/>
+                    <TextView
+                        android:id="@+id/sobot_tv_dislikeBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/sobot_cai_selector"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="@dimen/sobot_DIMEN_12PX"
+              android:layout_marginLeft="@dimen/sobot_DIMEN_48PX"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/sobot_list_divider_height"
+              android:paddingTop="0dp">
+
+    <!-- 中间提醒内容 -->
+    <TextView
+        android:id="@+id/sobot_reminde_time_Text"
+        style="@style/sobot_center_remind_time"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--头像-->
+        <ImageView
+            android:id="@+id/sobot_imgHead"
+            android:layout_marginLeft="10dp"
+            style="@style/sobot_chatting_imghead"/>
+
+        <!-- 昵称 -->
+        <TextView
+            android:id="@+id/sobot_name"
+            android:layout_toRightOf="@+id/sobot_imgHead"
+            style="@style/sobot_chatting_nickname"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sobot_name"
+            android:layout_toRightOf="@+id/sobot_imgHead" >
+
+            <!-- 机械人的消息内容 -->
+            <LinearLayout
+                android:id="@+id/sobot_ll_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="5dp"
+                android:paddingRight="2dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/sobot_chatfrom_bg_normal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sobot_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/sobot_DIMEN_7PX"
+                    android:paddingTop="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="@dimen/sobot_DIMEN_7PX"
+                    android:lineSpacingExtra="@dimen/sobot_DIMEN_5PX"
+                    android:textColor="@color/sobot_robot_msg_text_color"
+                    android:textSize="@dimen/sobot_robot_msg_text_size"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

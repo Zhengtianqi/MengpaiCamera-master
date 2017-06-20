@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 聊天界面，底部布局的selector -->
+    <item
+        android:right="-0.5dp"
+        android:left="-0.5dp"><shape>
+            <solid android:color="@color/sobot_color_bottom_bg" />
+
+            <stroke android:width="0.5dp" android:color="#ced6d6" />
+        </shape></item>
+
+</selector>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">萌拍</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="kefu">客服</string>
+    <string name="meihua">美化</string>
+    <string name="pintu">拼图</string>
+    <string name="xiangji">贴图相机</string>
+    <string name="tietuCamera">贴图相机</string>
+    <string name="_10">10%</string>
+
+
+    <string name="d_text1">登录后保存拍照习惯</string>
+    <string name="d_text2">打造你的专属照拍照软件</string>
+    <string name="d_phone_num">请输入账号</string>
+    <string name="d_phone_yanzheng">发送验证码</string>
+    <string name="d_phone_input">请输入密码</string>
+    <string name="d_noregin">未注册手机验证后自动登录</string>
+    <string name="d_go">进入萌拍</string>
+
+    <string name="z_text1">注册您的账户</string>
+    <string name="z_text2">打造你的专属拍照软件</string>
+    <string name="z_phone_num">请输入手机号码</string>
+    <string name="z_phone_yanzheng">发送</string>
+    <string name="z_phone_input"> 请输入验证码</string>
+    <string name="z_noregin">未注册手机验证后自动登录</string>
+    <string name="z_go">注册萌拍</string>
+
+
+    <string name="wangji">忘记密码？</string>
+    <string name="xinyong">新用户注册</string>
+    <string name="hehe">呵呵</string>
+    <string name="loading">loading...</string>
+    <string name="nicenews">nicenews</string>
+    <string name="tiaoguo">跳过动画</string>
+    <string name="select_pic">选择图片</string>
+</resources>

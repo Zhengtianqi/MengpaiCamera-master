@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <gradient
+        android:angle="90"
+        android:endColor="@color/sobot_color_bottom_edittext_text"
+        android:startColor="@color/sobot_color_bottom_edittext_text" />
+    <!-- stroke 描边 -->
+    <stroke
+        android:width="0.5dip"
+        android:color="#d9d9d9" />
+    <!-- corners 圆角 android:radius为角的弧度，值越大角越圆。 -->
+    <corners android:radius="0dip" />
+
+</shape>

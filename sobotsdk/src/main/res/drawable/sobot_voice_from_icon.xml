@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+<!-- 客服的语音帧动画 -->
+    <item
+        android:drawable="@drawable/sobot_pop_voice_receive_anime_1"
+        android:duration="150"/>
+    <item
+        android:drawable="@drawable/sobot_pop_voice_receive_anime_2"
+        android:duration="150"/>
+    <item
+        android:drawable="@drawable/sobot_pop_voice_receive_anime_3"
+        android:duration="150"/>
+    <item
+        android:drawable="@drawable/sobot_pop_voice_receive_anime_4"
+        android:duration="150"/>
+    <item
+        android:drawable="@drawable/sobot_pop_voice_receive_anime_5"
+        android:duration="150"/>
+
+</animation-list>

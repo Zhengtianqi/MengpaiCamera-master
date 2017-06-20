@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 从编辑模式转到语音模式按钮 -->
+    <item android:drawable="@drawable/sobot_icon_vioce_pressed" android:state_pressed="true"/>
+    <item android:drawable="@drawable/sobot_icon_vioce_normal"/>
+
+</selector>

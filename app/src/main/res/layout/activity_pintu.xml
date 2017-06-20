@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.stickercamera.app.view.TopView
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/pic_show"
+        android:layout_width="160dp"
+        android:layout_height="225dp"
+        android:layout_below="@+id/pic_select"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/pic_select"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@color/blue"
+        android:text="@string/select_pic"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

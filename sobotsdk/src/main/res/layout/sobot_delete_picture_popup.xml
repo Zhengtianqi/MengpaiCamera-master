@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@null"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_photo_hint"
+            android:layout_width="fill_parent"
+            android:layout_height="65dp"
+            android:text="标题"
+            android:gravity="center"
+            android:textColor="#777777"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"
+            android:background="#d9d9d9" />
+
+        <Button
+            android:id="@+id/btn_pick_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/sobot_item_setting_selector"
+            android:textSize="@dimen/sobot_text_font_normal"
+            android:textColor="#e64340"
+            android:text="@string/sobot_delete"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dip"
+            android:background="#f0f0f0" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/sobot_item_setting_selector"
+            android:textSize="@dimen/sobot_text_font_normal"
+            android:text="@string/sobot_btn_cancle"/>
+    </LinearLayout>
+
+</RelativeLayout>

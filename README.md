@@ -2,6 +2,7 @@
  android studio开发模仿美拍相机 有美拍 图片处理 客服 拼图功能
 图片如下
 <br/>
+<div align=center><img width="150" height="150" src="https://github.com/Zhengtianqi/MengpaiCamera-master/blob/master/image002.png"/></div>
 ![image](https://github.com/Zhengtianqi/MengpaiCamera-master/blob/master/image002.png)
 ![image](https://github.com/Zhengtianqi/MengpaiCamera-master/blob/master/image004.jpg)
 ![image](https://github.com/Zhengtianqi/MengpaiCamera-master/blob/master/image006.jpg)
